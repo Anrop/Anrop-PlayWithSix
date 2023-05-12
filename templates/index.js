@@ -11,7 +11,8 @@ app.get('/', (req, res) => {
   arma3sync()
     .then((arma3sync) => Promise.all([
       afisync(arma3sync),
-      steamWorkshop.collection('Arma Sweden', 457453269, arma3sync)
+      steamWorkshop.collection('Arma Sweden', 457453269, arma3sync),
+      steamWorkshop.collection('Arma Sweden (Optional)', 2110389220, arma3sync)
     ]))
     .then((dynamicTemplates) => {
       const sortedTemplates = dynamicTemplates
