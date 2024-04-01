@@ -16,6 +16,8 @@ describe('templates', () => {
     nock('https://api.steampowered.com')
       .post('/ISteamRemoteStorage/GetCollectionDetails/v1/', 'collectioncount=1&publishedfileids%5B0%5D=457453269')
       .reply(200, steamWorkshopCollectionData)
+      .post('/ISteamRemoteStorage/GetCollectionDetails/v1/', 'collectioncount=1&publishedfileids%5B0%5D=2110389220')
+      .reply(200, steamWorkshopCollectionData)
       .post('/ISteamRemoteStorage/GetCollectionDetails/v1/', 'collectioncount=1&publishedfileids%5B0%5D=2905664671')
       .reply(200, steamWorkshopCollectionData)
 
@@ -53,6 +55,12 @@ describe('templates', () => {
             '@cba_a3'
           ],
           title: 'Arma Sweden'
+        },
+        {
+          mods: [
+            '@cba_a3'
+          ],
+          title: 'Arma Sweden (Optional)'
         },
         {
           mods: [
