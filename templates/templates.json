@@ -24,9 +24,7 @@
       "@cba_a3",
       "@cup_units",
       "@cup_vehicles",
-      "@cup_vehicles_ace_compat",
-      "@cup_weapons",
-      "@cup_weapons_ace_compat"
+      "@cup_weapons"
     ]
   },
   {
