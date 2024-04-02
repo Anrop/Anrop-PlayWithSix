@@ -22,7 +22,7 @@
     "newrelic": "^11.14.0"
   },
   "devDependencies": {
-    "jest": "^27.5.1",
+    "jest": "^29.7.0",
     "nock": "^13.5.4",
     "standard": "^17.1.0",
     "supertest": "^6.3.4"
